@@ -1,31 +1,30 @@
 ---
-name: Story/Task/Issue
+name: New issue
 description: Create a new story or task
 body:
   - type: textarea
     id: definition_of_done
     attributes:
-      label: Definition of Done / Acceptance Criteria
-      description: What can someone see/do when this task is done.
+      label: Definition of Done
+      description: How can others tell when this task is done?
       placeholder: >-
-        The export data is available in the xxx format, including age of the
-        patient at the time of imaging...
+        The export data is available in X format, with Y processing and Z plots.
     validations:
       required: true
   - type: textarea
     id: testing
     attributes:
       label: Testing
-      description: Specific testing considerations for this task to be done
-      placeholder: Passed integration testing that uses the correct modality...
+      description: Any testing considerations that should be taken into account
+      placeholder: Unit, integration and regression tests will be written for feature X.
     validations:
       required: false
   - type: textarea
     id: documentation
     attributes:
       label: Documentation
-      description: Documentation to be completed along with this task
-      placeholder: Update README and user guide...
+      description: Documentation to be completed or updated
+      placeholder: README should be updated to reflect the changes. A wiki entry should be made.
     validations:
       required: false
   - type: textarea
